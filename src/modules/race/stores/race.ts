@@ -51,7 +51,7 @@ export const useRaceStore = defineStore({
     getResults: (state): Array<any> => state.results,
   },
   actions: {
-    shuffledArray() {
+    gerRandomHorses() {
       const horses = [...this.horses];
       horses.map((horse) => {
         horse.position = 0;
@@ -64,7 +64,7 @@ export const useRaceStore = defineStore({
       this.isRaceStarted = false;
       this.roundIndex = 1;
       this.rounds = this.rounds.map((round) => {
-        round.horses = cloneDeep(this.shuffledArray());
+        round.horses = cloneDeep(this.gerRandomHorses());
         return round;
       });
       this.results = cloneDeep(RACE.rounds);
@@ -76,7 +76,7 @@ export const useRaceStore = defineStore({
       }
     },
     startRace() {
-      const setResultToHorse = (horse: Horse) => {
+      const setHorseToResult = (horse: Horse) => {
         const resultRound = this.results.find(
           (round) => round.id === this.roundIndex
         );
@@ -92,7 +92,7 @@ export const useRaceStore = defineStore({
             horse.position = Number(horse.position) + Number(horse.condition);
           } else {
             horse.finished = true;
-            setResultToHorse(horse);
+            setHorseToResult(horse);
           }
         });
 
@@ -102,7 +102,7 @@ export const useRaceStore = defineStore({
         if (allFinished) {
           clearInterval(this.roundTimer);
           if (Number(this.roundIndex) < Number(this.rounds.length)) {
-            this.nextRace();
+            this.nextRound();
             this.startRace();
           }
         }
@@ -111,7 +111,7 @@ export const useRaceStore = defineStore({
     stopRace() {
       clearInterval(this.roundTimer);
     },
-    nextRace() {
+    nextRound() {
       this.roundIndex = Number(this.roundIndex) + 1;
     },
   },
