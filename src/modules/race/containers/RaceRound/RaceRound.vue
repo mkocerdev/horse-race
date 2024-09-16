@@ -1,43 +1,47 @@
 <script lang="ts">
-import { defineComponent, computed } from 'vue'
-import { useRaceStore } from '@/modules/race/stores/race'
-import type { Horse } from '@/modules/race/stores/race'
-import HorseImage from '@/modules/race/components/HorseImage/HorseImage.vue'
+import { defineComponent, computed } from "vue";
+import { useRaceStore } from "@/modules/race/stores/race";
+import type { Horse } from "@/modules/race/stores/race";
+import HorseImage from "@/modules/race/components/HorseImage/HorseImage.vue";
 export default defineComponent({
   components: {
-    HorseImage
+    HorseImage,
   },
   setup() {
-    const raceStore = useRaceStore()
+    const raceStore = useRaceStore();
 
     const getCurrentRound = computed(() => {
-      return raceStore.getRound
-    })
+      return raceStore.getRound;
+    });
 
     function getPositionHorse(horse: Horse) {
       if (horse.position > 0) {
-        const result = (horse.position / raceStore.getRound.distance) * 100
-        return result > 100 ? 100 : result
+        const result = (horse.position / raceStore.getRound.distance) * 100;
+        return result > 100 ? 100 : result;
       }
-      return 0
+      return 0;
     }
 
     // @ts-ignore
-    window.stores = { raceStore }
+    window.stores = { raceStore };
     return {
       raceStore,
       getCurrentRound,
-      getPositionHorse
-    }
-  }
-})
+      getPositionHorse,
+    };
+  },
+});
 </script>
 
 <template>
   <div class="race">
     <div class="race__lap">
       <template v-if="getCurrentRound.horses.length > 0">
-        <div v-for="(horse, index) in getCurrentRound.horses" :key="index" class="race__lap-line">
+        <div
+          v-for="(horse, index) in getCurrentRound.horses"
+          :key="index"
+          class="race__lap-line"
+        >
           <div class="race-line">
             <div class="race-line__position">{{ index + 1 }}</div>
             <div class="race-line__line">

@@ -106,7 +106,7 @@ export const useRaceStore = defineStore({
             this.startRace();
           }
         }
-      }, 100);
+      }, 200);
     },
     stopRace() {
       clearInterval(this.roundTimer);
