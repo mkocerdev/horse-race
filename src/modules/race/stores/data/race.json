@@ -1,0 +1,202 @@
+{
+  "horses": [
+    {
+      "id": 1,
+      "name": "Thunderbolt",
+      "condition": 85,
+      "color": "Bright Red",
+      "color_code": "#FF0000",
+      "position": 0
+    },
+    {
+      "id": 2,
+      "name": "Starry Night",
+      "condition": 40,
+      "color": "Electric Blue",
+      "color_code": "#1E90FF",
+      "position": 0
+    },
+    {
+      "id": 3,
+      "name": "Misty Morning",
+      "condition": 90,
+      "color": "Lime Green",
+      "color_code": "#32CD32",
+      "position": 0
+    },
+    {
+      "id": 4,
+      "name": "Wind Whisper",
+      "condition": 65,
+      "color": "Hot Pink",
+      "color_code": "#FF69B4",
+      "position": 0
+    },
+    {
+      "id": 5,
+      "name": "Golden Sun",
+      "condition": 92,
+      "color": "Vivid Orange",
+      "color_code": "#FF4500",
+      "position": 0
+    },
+    {
+      "id": 6,
+      "name": "Moonshadow",
+      "condition": 78,
+      "color": "Turquoise",
+      "color_code": "#40E0D0",
+      "position": 0
+    },
+    {
+      "id": 7,
+      "name": "Crimson Fire",
+      "condition": 30,
+      "color": "Deep Purple",
+      "color_code": "#4B0082",
+      "position": 0
+    },
+    {
+      "id": 8,
+      "name": "Silver Stream",
+      "condition": 88,
+      "color": "Neon Pink",
+      "color_code": "#FF6EC7",
+      "position": 0
+    },
+    {
+      "id": 9,
+      "name": "Storm Chaser",
+      "condition": 50,
+      "color": "Bright Yellow",
+      "color_code": "#FFFF00",
+      "position": 0
+    },
+    {
+      "id": 10,
+      "name": "Eagle Eye",
+      "condition": 75,
+      "color": "Chartreuse",
+      "color_code": "#7FFF00",
+      "position": 0
+    },
+    {
+      "id": 11,
+      "name": "Majestic Spirit",
+      "condition": 60,
+      "color": "Royal Blue",
+      "color_code": "#4169E1",
+      "position": 0
+    },
+    {
+      "id": 12,
+      "name": "Emerald Dream",
+      "condition": 45,
+      "color": "Electric Purple",
+      "color_code": "#BF00FF",
+      "position": 0
+    },
+    {
+      "id": 13,
+      "name": "Sapphire Blaze",
+      "condition": 82,
+      "color": "Bright Cyan",
+      "color_code": "#00FFFF",
+      "position": 0
+    },
+    {
+      "id": 14,
+      "name": "Whispering Wind",
+      "condition": 37,
+      "color": "Bright Green",
+      "color_code": "#00FF00",
+      "position": 0
+    },
+    {
+      "id": 15,
+      "name": "Ironclad",
+      "condition": 94,
+      "color": "Crimson",
+      "color_code": "#DC143C",
+      "position": 0
+    },
+    {
+      "id": 16,
+      "name": "Sunset Glory",
+      "condition": 52,
+      "color": "Deep Orange",
+      "color_code": "#FF8C00",
+      "position": 0
+    },
+    {
+      "id": 17,
+      "name": "Wild Thunder",
+      "condition": 33,
+      "color": "Violet",
+      "color_code": "#8A2BE2",
+      "position": 0
+    },
+    {
+      "id": 18,
+      "name": "Velvet Dream",
+      "condition": 87,
+      "color": "Bright Coral",
+      "color_code": "#FF7F50",
+      "position": 0
+    },
+    {
+      "id": 19,
+      "name": "Raging River",
+      "condition": 29,
+      "color": "Steel Blue",
+      "color_code": "#4682B4",
+      "position": 0
+    },
+    {
+      "id": 20,
+      "name": "Harmony",
+      "condition": 70,
+      "color": "Fuchsia",
+      "color_code": "#FF00FF",
+      "position": 0
+    }
+  ],
+  "rounds": [
+    {
+      "id": 1,
+      "name": "1st lap - 1200m",
+      "distance": 1200,
+      "horses": []
+    },
+    {
+      "id": 2,
+      "name": "2nd lap - 1400m",
+      "distance": 1400,
+      "horses": []
+    },
+    {
+      "id": 3,
+      "name": "3rd lap - 1600m",
+      "distance": 1600,
+      "horses": []
+    },
+    {
+      "id": 4,
+      "name": "4th lap - 1800m",
+      "distance": 1800,
+      "horses": []
+    },
+    {
+      "id": 5,
+      "name": "5th lap - 2000m",
+      "distance": 2000,
+      "horses": []
+    },
+    {
+      "id": 6,
+      "name": "6th lap - 2200m",
+      "distance": 2200,
+      "horses": []
+    }
+  ]
+}
